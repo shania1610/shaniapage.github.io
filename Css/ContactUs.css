@@ -1,0 +1,73 @@
+body {
+    background-color: lightpink;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(211, 0, 92);
+}
+
+
+li {
+    display: inline;
+    margin: 20px;
+}
+
+
+a {
+    color: white;
+}
+
+
+nav :hover {
+    color: rgb(75, 20, 33);
+}
+
+.contact-container {
+    max-width: 500px;
+    background-color: rgb(213, 207, 211);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+button{
+    background-color: rgb(70, 5, 38);
+    color: white;
+    border: 2px rgb(70, 5, 38);
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(201, 12, 119);
+}

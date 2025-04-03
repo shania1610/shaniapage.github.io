@@ -1,0 +1,47 @@
+body {
+    background-color: lightpink;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(211, 0, 92);
+}
+
+
+li {
+    display: inline;
+    margin: 20px;
+}
+
+
+a {
+    color: white;
+}
+
+
+nav :hover {
+    color: rgb(75, 20, 33);
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+
+div {
+    text-align: center;
+    flex: 1;
+}
+
+img {
+    height: auto;
+    max-width: 60%;
+}

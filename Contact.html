@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/ContactUs.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Script/ContactUs.js" defer></script>
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <ul>
+        <nav>
+            <a href="Index.html">Home Page</a>
+            <a href="About Me.html">About Me</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <br>
+
+    </ul>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="text" id="contactNumber" required placeholder="+356 #### ####">
+                <span class="error-message" id="numberError"></span>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+</body>
+</html>

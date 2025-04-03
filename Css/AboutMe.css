@@ -1,0 +1,35 @@
+body {
+    background-color: lightpink;
+}
+
+nav {
+
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(211, 0, 92);
+}
+
+li {
+    display: inline;
+    margin: 20px;
+}
+
+a {
+    color: white;
+}
+
+
+nav :hover {
+    color: rgb(75, 20, 33);
+}
+
+
+h1 {
+    color: rgb(91, 9, 57);
+}
+
+div :hover {
+    background-color: rgb(178, 68, 123);
+}

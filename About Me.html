@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="css/AboutMe.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-..." crossorigin="anonymous"></script>
+    <script src="dist/js/lightgallery-all.min.js"></script>
+    <script src="Script/AboutMeScript.js"></script>
+    <title>About Me</title>
+</head>
+
+<body>
+    <nav>
+        <a href="Index.html">Home Page</a>
+        <a href="About Me.html">About Me</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <ul id="lightGallery" class="gallery">
+        <li data-title="Pisa"
+            data-desc="The Leaning Tower of Pisa, known for its unintended tilt, is a remarkable architectural marvel and a UNESCO World Heritage Site that attracts millions of visitors each year."
+            data-responsive-src="Images/Pisa.jpg" data-src="Images/Pisa.jpg">
+            <a href="#"><img src="Images/Pisa.jpg" alt="The Leaning Tower of Pisa, known for its unintended tilt, is a remarkable architectural marvel and a UNESCO World Heritage Site that attracts millions of visitors each year." /></a>
+        </li>
+
+        <li data-title="Amalfi"
+            data-desc="The breathtaking Amalfi Coast, with its vibrant cliffside villages and sparkling azure waters, is a perfect destination for those seeking both adventure and relaxation in Italy."
+            data-responsive-src="Images/Amalfi.jpg" data-src="Images/Amalfi.jpg">
+            <a href="#"><img src="Images/Amalfi.jpg" alt="The breathtaking Amalfi Coast, with its vibrant cliffside villages and sparkling azure waters, is a perfect destination for those seeking both adventure and relaxation in Italy." /></a>
+        </li>
+
+        <li data-title="Paris" data-desc="Paris, known as the City of Light, is celebrated for its rich history, stunning architecture, and vibrant culture, making it a dream destination for travelers from around the world.
+
+        " data-responsive-src="Images/Paris.jpg" data-src="Images/Paris.jpg">
+            <a href="#"><img src="Images/Paris.jpg" alt="Paris, known as the City of Light, is celebrated for its rich history, stunning architecture, and vibrant culture, making it a dream destination for travelers from around the world." /></a>
+        </li>
+
+        <li data-title="Code" data-desc="The coding profession not only demands strong analytical skills and creativity but also offers endless opportunities for innovation and problem-solving in a rapidly evolving technological landscape.
+
+        " data-responsive-src="Images/Code.jpg" data-src="Images/Code.jpg">
+            <a href="#"><img src="Images/Code.jpg" alt="The coding profession not only demands strong analytical skills and creativity but also offers endless opportunities for innovation and problem-solving in a rapidly evolving technological landscape" /></a>
+        </li>
+
+        <li data-title="London" data-desc="London, a vibrant city steeped in history and culture, is renowned for its iconic landmarks such as the Tower of London, Buckingham Palace, and the bustling streets of Soho.
+
+        " data-responsive-src="Images/London.jpg" data-src="Images/London.jpg">
+            <a href="#"><img src="Images/London.jpg" alt="London, a vibrant city steeped in history and culture, is renowned for its iconic landmarks such as the Tower of London, Buckingham Palace, and the bustling streets of Soho." /></a>
+        </li>
+
+        <li data-title="Family" data-desc="Family is a tapestry woven with love, support, and shared moments that create the foundation of our lives.
+
+        " data-responsive-src="Images/Family.jpg" data-src="Images/Family.jpg">
+            <a href="#"><img src="Images/Family.jpg" alt="Family is a tapestry woven with love, support, and shared moments that create the foundation of our lives." /></a>
+        </li>
+    </ul>
+
+    <script>
+        $(document).ready(function () {
+            $("#lightGallery").lightGallery();
+            const facts = ["I once climbed a mountain!"];
+            $('#surprise-button').click(function () {
+                const randomFact = facts[Math.floor(Math.random() * facts.length)];
+                $('#fact-display').text(randomFact);
+            });
+        });
+    </script>
+
+    <p>
+        Welcome to my personal homepage! It's a pleasure to meet you here...
+    </p>
+
+    <h1>Surprise Me!</h1>
+
+    <div class="container">
+        <button id="surprise-button">Get a Fun Fact</button>
+        <p id="fact-display"></p>
+    </div>
+</body>
+
+</html>
